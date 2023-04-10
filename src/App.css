@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+.App{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topSections{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px #ccc;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.resultSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+.input{
+    width: 100%;
+    margin: 10px 0;
+    height: 25px;
+}
+.inputRadio{
+    margin: 10px 10px 20px 10px;
+}
+.btn{
+    background-color: rgb(100, 36, 178);
+    color: #fff;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.transaction{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: solid 1px rgb(100, 36, 178);
+    margin: 5px 0;
+}
+.transItem{
+    width: calc(30% - 5px);
+    margin: 0 auto;
+    text-align: center;
+}
+.num{
+    width: 10%;
+}
+.item{
+    width: 180px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #333;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    margin: 20px 0;
+}
+.expense{
+    background-color: rgb(235, 56, 20);
+    color: #fff;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.income{
+    background-color: rgb(45, 177, 11);
+    color: #fff;
+}
+.equal{
+    background-color: rgb(11, 90, 199);
+    color: #fff;
 }
